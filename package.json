@@ -1,26 +1,26 @@
 {
-  "name": "lrud-test",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+  "name": "lrud-test", // 專案名稱
+  "version": "0.1.0", // 專案版本
+  "private": true, // 是否為私有專案
+  "scripts": { // 腳本命令
+    "dev": "next dev", // 開發模式
+    "build": "next build", // 建置專案
+    "start": "next start", // 啟動專案
+    "lint": "next lint" // 檢查程式碼
   },
-  "dependencies": {
-    "@please/lrud": "^0.0.24",
-    "lrud": "^8.0.0",
-    "next": "14.2.4",
-    "react": "^18",
-    "react-dom": "^18"
+  "dependencies": { // 專案依賴
+    "@please/lrud": "^0.0.24", // lrud 套件
+    "lrud": "^8.0.0", // lrud 套件
+    "next": "14.2.4", // Next.js 框架
+    "react": "^18", // React 函式庫
+    "react-dom": "^18" // React DOM 函式庫
   },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+  "devDependencies": { // 開發依賴
+    "@types/node": "^20", // Node.js 類型定義
+    "@types/react": "^18", // React 類型定義
+    "@types/react-dom": "^18", // React DOM 類型定義
+    "postcss": "^8", // PostCSS 工具
+    "tailwindcss": "^3.4.1", // Tailwind CSS 框架
+    "typescript": "^5" // TypeScript 編譯器
   }
 }

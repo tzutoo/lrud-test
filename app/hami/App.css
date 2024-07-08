@@ -1,43 +1,69 @@
+/* 應用程式樣式 */
 .app {
+  /* 使用 Flexbox 佈局，將項目置中對齊並添加 50 像素的內邊距 */
   display: flex;
   align-items: center;
   padding: 50px;
 }
 
+/* 區塊容器樣式 */
 .block-container {
+  /* 設置 1 像素寬的深灰色邊框 */
   border: 1px solid #3e3e3e;
+  /* 設置 10 像素的外邊距 */
   margin: 10px;
+  /* 設置 0.325 rem 的內邊距 */
   padding: 0.325rem;
+  /* 設置 0.5 rem 的圓角半徑 */
   border-radius: 0.5rem;
+  /* 設置邊框過渡效果，在 0.18 秒內平滑過渡 */
   transition: border 0.18s ease-out;
 }
 
+/* 當區塊容器獲得焦點時的樣式 */
 .block-container.isFocused {
+  /* 設置邊框顏色為深紫色 */
   border-color: #530db1;
 }
 
+/* 垂直排列的區塊容器樣式 */
 .block-container-vertical {
+  /* 使用 Flexbox 佈局，垂直排列項目 */
   display: flex;
   flex-direction: column;
 }
 
+/* 水平排列的區塊容器樣式 */
 .block-container-horizontal {
+  /* 使用 Flexbox 佈局，水平排列項目 */
   display: flex;
 }
 
+/* 區塊樣式 */
 .block {
+  /* 設置文字顏色為白色 */
   color: white;
+  /* 使用 Grid 佈局，將內容置中對齊 */
   display: grid;
   place-content: center;
+  /* 設置背景顏色為深灰色 */
   background: #3c3c3c;
+  /* 設置字體大小為 1.25 rem */
   font-size: 1.25rem;
+  /* 設置字體粗細為 500 */
   font-weight: 500;
+  /* 設置內邊距為 1 rem 水平、1.75 rem 垂直 */
   padding: 1rem 1.75rem;
+  /* 設置外邊距為 0.325 rem */
   margin: 0.325rem;
+  /* 設置 0.4 rem 的圓角半徑 */
   border-radius: 0.4rem;
+  /* 設置邊框過渡效果，在 0.18 秒內平滑過渡 */
   transition: border 0.18s ease-out;
 }
 
+/* 當區塊獲得焦點時的樣式 */
 .block.isFocusedLeaf {
+  /* 設置背景顏色為深紫色 */
   background: #7700ff;
 }
