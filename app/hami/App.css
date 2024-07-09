@@ -1,5 +1,5 @@
 /* 應用程式樣式 */
-.app {
+.app1 {
   /* 使用 Flexbox 佈局，將項目置中對齊並添加 50 像素的內邊距 */
   display: flex;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 /* 區塊容器樣式 */
-.block-container {
+.block-container1 {
   /* 設置 1 像素寬的深灰色邊框 */
   border: 1px solid #3e3e3e;
   /* 設置 10 像素的外邊距 */
@@ -21,26 +21,26 @@
 }
 
 /* 當區塊容器獲得焦點時的樣式 */
-.block-container.isFocused {
+.block-container1.isFocused {
   /* 設置邊框顏色為深紫色 */
   border-color: #530db1;
 }
 
 /* 垂直排列的區塊容器樣式 */
-.block-container-vertical {
+.block-container1-vertical {
   /* 使用 Flexbox 佈局，垂直排列項目 */
   display: flex;
   flex-direction: column;
 }
 
 /* 水平排列的區塊容器樣式 */
-.block-container-horizontal {
+.block-container1-horizontal {
   /* 使用 Flexbox 佈局，水平排列項目 */
   display: flex;
 }
 
 /* 區塊樣式 */
-.block {
+.block1 {
   /* 設置文字顏色為白色 */
   color: white;
   /* 使用 Grid 佈局，將內容置中對齊 */
@@ -63,7 +63,7 @@
 }
 
 /* 當區塊獲得焦點時的樣式 */
-.block.isFocusedLeaf {
+.block1.isFocusedLeaf {
   /* 設置背景顏色為深紫色 */
   background: #7700ff;
 }

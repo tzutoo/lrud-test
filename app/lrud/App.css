@@ -1,10 +1,10 @@
-.app {
+.app1 {
   display: flex;
   align-items: center;
   padding: 50px;
 }
 
-.block-container {
+.block-container1 {
   border: 1px solid #3e3e3e;
   margin: 10px;
   padding: 0.325rem;
@@ -12,20 +12,20 @@
   transition: border 0.18s ease-out;
 }
 
-.block-container.isFocused {
+.block-container1.isFocused {
   border-color: #530db1;
 }
 
-.block-container-vertical {
+.block-container1-vertical {
   display: flex;
   flex-direction: column;
 }
 
-.block-container-horizontal {
+.block-container1-horizontal {
   display: flex;
 }
 
-.block {
+.block1 {
   color: white;
   display: grid;
   place-content: center;
@@ -38,6 +38,6 @@
   transition: border 0.18s ease-out;
 }
 
-.block.isFocusedLeaf {
+.block1.isFocusedLeaf {
   background: #7700ff;
 }
