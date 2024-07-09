@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Drawer from './components/Drawer'
 import Navbar from './components/Navbar'
 import Content from './components/Content'
+import SubPage1 from './components/SubPage1'
 
 export default function HamiComponent() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(true)
@@ -13,9 +14,9 @@ export default function HamiComponent() {
   const [previousDrawerItem, setPreviousDrawerItem] = useState(0)
 
   const pages = [
-    { name: 'Page 1', subPages: ['Subpage 1', 'Subpage 2', 'Subpage 3'] },
-    { name: 'Page 2', subPages: [] },
-    { name: 'Page 3', subPages: [] },
+    { name: 'Page 1', subPages: ['Subpage 1 Content', 'Subpage 2 Content', 'Subpage 3 Content'] },
+    { name: 'Page 2 Content', subPages: [] },
+    { name: 'Page 3 Content', subPages: [] },
   ]
 
   useEffect(() => {
@@ -108,9 +109,14 @@ export default function HamiComponent() {
             setActiveSubPage={setActiveSubPage}
             setFocusedElement={setFocusedElement}
             focusedElement={focusedElement}
+            isFocused={focusedElement === 'navbar'}
           />
         )}
-        <Content pages={pages} activePage={activePage} activeSubPage={activeSubPage} />
+        {activePage === 0 && activeSubPage === 0 && <div style={{ color: focusedElement === 'navbar' ? 'white' : 'inherit' }}>Subpage 1 Content</div>}
+        {activePage === 0 && activeSubPage === 1 && <div style={{ color: 'white' }}>Subpage 2 Content</div>}
+        {activePage === 0 && activeSubPage === 2 && <div style={{ color: 'white' }}>Subpage 3 Content</div>}
+        {activePage === 1 && <div style={{ color: 'white' }}>Page 2 Content</div>}
+        {activePage === 2 && <div style={{ color: 'white' }}>Page 3 Content</div>}
       </div>
     </div>
   )

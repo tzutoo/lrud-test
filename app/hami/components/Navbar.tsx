@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import { FocusNode } from '@please/lrud'
 
@@ -58,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({
                   : activeSubPage === index
                   ? '#d35400'
                   : 'transparent',
-              color: '#e74c3c',
+              color: activeSubPage === index ? '#fff' : '#e74c3c',
               borderRadius: '5px',
               cursor: 'pointer',
               transition: 'background-color 0.3s ease',

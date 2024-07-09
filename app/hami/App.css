@@ -67,3 +67,22 @@
   /* 設置背景顏色為深紫色 */
   background: #7700ff;
 }
+
+/* 海報樣式 */
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.poster img {
+  max-width: 200px;
+  height: auto;
+}
+
+.poster p {
+  margin-top: 5px;
+  text-align: center;
+}
