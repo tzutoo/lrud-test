@@ -11,7 +11,7 @@ function TV_app() {
   const hasSelectedProfile = Boolean(selectedProfile);
 
   return (
-    <FocusNode className="app">
+    <FocusNode className="app1">
       <AnimatePresence>
         {!hasSelectedProfile && (
           <Profiles setSelectedProfile={setSelectedProfile} />

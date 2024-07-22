@@ -3,7 +3,7 @@ import './../App.css';
 
 function Basic_layout() {
   return (
-    <FocusNode className="app"
+    <FocusNode className="app1"
     onFocused={(e) => {
       console.log("ROOT");
     }}>
@@ -18,23 +18,23 @@ function Basic_layout() {
         console.log("onBlurred 01");
       }}
 
-        className="block-container block-container-horizontal">
-        <FocusNode className="block"
+        className="block-container1 block-container1-horizontal">
+        <FocusNode className="block1"
         onSelected={(e) => {
           console.log("11");
         }}>One</FocusNode>
-        <FocusNode className="block"
+        <FocusNode className="block1"
         onSelected={(e) => {
           console.log("12");
         }}>Two</FocusNode>
-        <FocusNode className="block"
+        <FocusNode className="block1"
         onSelected={(e) => {
           console.log("13");
         }}>Three</FocusNode>
       </FocusNode>
 
       <FocusNode
-        className="block-container block-container-horizontal"
+        className="block-container1 block-container1-horizontal"
         onSelected={(e) => {
           console.log("02");
         }}
@@ -45,12 +45,12 @@ function Basic_layout() {
           console.log("onBlurred 02");
         }}
         >
-        <FocusNode className="block">One</FocusNode>
-        <FocusNode className="block">Two</FocusNode>
-        <FocusNode className="block">Three</FocusNode>
+        <FocusNode className="block1">One</FocusNode>
+        <FocusNode className="block1">Two</FocusNode>
+        <FocusNode className="block1">Three</FocusNode>
       </FocusNode>
 
-      <FocusNode className="block-container block-container-horizontal"
+      <FocusNode className="block-container1 block-container1-horizontal"
       onSelected={(e) => {
         console.log("03");
       }}
@@ -60,9 +60,9 @@ function Basic_layout() {
       onBlurred={(e) => {
         console.log("onBlurred 03");
       }}>
-        <FocusNode className="block">One</FocusNode>
-        <FocusNode className="block">Two</FocusNode>
-        <FocusNode className="block">Three</FocusNode>
+        <FocusNode className="block1">One</FocusNode>
+        <FocusNode className="block1">Two</FocusNode>
+        <FocusNode className="block1">Three</FocusNode>
       </FocusNode>
     </FocusNode>
   );
